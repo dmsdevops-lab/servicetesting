@@ -1,6 +1,6 @@
 image:
   repository: rancher/backup-restore-operator
-  tag: %TAG%
+  tag: v2.0.0-rc5
 
 ## Default s3 bucket for storing all backup files created by the backup-restore-operator
 s3:
@@ -19,7 +19,7 @@ s3:
 ## ref: http://kubernetes.io/docs/user-guide/persistent-volumes/
 ## If persistence is enabled, operator will create a PVC with mountPath /var/lib/backups
 persistence: 
-  enabled: false
+  enabled: true
 
   ## If defined, storageClassName: <storageClass>
   ## If set to "-", storageClassName: "", which disables dynamic provisioning
